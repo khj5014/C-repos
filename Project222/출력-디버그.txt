@@ -1,0 +1,18 @@
+﻿'Project222.exe'(Win32): 'C:\Users\gmlwo\source\repos\Project222\Debug\Project222.exe'을(를) 로드했습니다. 기호가 로드되었습니다.
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\ntdll.dll'을(를) 로드했습니다. 
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\kernel32.dll'을(를) 로드했습니다. 
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\KernelBase.dll'을(를) 로드했습니다. 
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\vcruntime140d.dll'을(를) 로드했습니다. 
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\ucrtbased.dll'을(를) 로드했습니다. 
+0x13b8 스레드가 종료되었습니다(코드: 0 (0x0)).
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\kernel.appcore.dll'을(를) 로드했습니다. 
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\msvcrt.dll'을(를) 로드했습니다. 
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\rpcrt4.dll'을(를) 로드했습니다. 
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\sspicli.dll'을(를) 로드했습니다. 
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\cryptbase.dll'을(를) 로드했습니다. 
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\bcryptprimitives.dll'을(를) 로드했습니다. 
+'Project222.exe'(Win32): 'C:\Windows\SysWOW64\sechost.dll'을(를) 로드했습니다. 
+0x21c0 스레드가 종료되었습니다(코드: 0 (0x0)).
+0x4600 스레드가 종료되었습니다(코드: 0 (0x0)).
+0x2c90 스레드가 종료되었습니다(코드: 0 (0x0)).
+'[1828] Project222.exe' 프로그램이 종료되었습니다(코드: 0 (0x0)).

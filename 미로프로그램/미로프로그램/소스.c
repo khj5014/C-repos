@@ -5,8 +5,8 @@
 #define MAZE_SIZE 6
 
 typedef struct {
-	short r;  //í–‰
-	short c;  //ì—´
+	short r;  //Çà
+	short c;  //¿­
 } element;
 
 typedef struct {
@@ -14,38 +14,38 @@ typedef struct {
 	int top;
 } StackType;
 
-// ìŠ¤íƒ ì´ˆê¸°í™” í•¨ìˆ˜
+// ½ºÅÃ ÃÊ±âÈ­ ÇÔ¼ö
 void init_stack(StackType* s) {
 	s->top = -1;
 }
-// ê³µë°± ìƒíƒœ ê²€ì¶œ í•¨ìˆ˜
+// °ø¹é »óÅÂ °ËÃâ ÇÔ¼ö
 int is_empty(StackType* s) {
 	return (s->top == -1);
 }
-// í¬í™” ìƒíƒœ ê²€ì¶œ í•¨ìˆ˜
+// Æ÷È­ »óÅÂ °ËÃâ ÇÔ¼ö
 int is_full(StackType* s) {
 	return (s->top == (MAX_STACK_SIZE - 1));
 }
-// ì‚½ì…í•¨ìˆ˜
+// »ğÀÔÇÔ¼ö
 void push(StackType* s, element item) {
 	if (is_full(s)) {
-		fprintf(stderr, "ìŠ¤íƒ í¬í™” ì—ëŸ¬\n");
+		fprintf(stderr, "½ºÅÃ Æ÷È­ ¿¡·¯\n");
 		return;
 	}
 	else s->data[++(s->top)] = item;
 }
-// ì‚­ì œí•¨ìˆ˜
+// »èÁ¦ÇÔ¼ö
 element pop(StackType* s) {
 	if (is_empty(s)) {
-		fprintf(stderr, "ìŠ¤íƒ ê³µë°± ì—ëŸ¬\n");
+		fprintf(stderr, "½ºÅÃ °ø¹é ¿¡·¯\n");
 		exit(1);
 	}
 	else return s->data[(s->top)--];
 }
-// í”¼í¬í•¨ìˆ˜
+// ÇÇÅ©ÇÔ¼ö
 element peek(StackType* s) {
 	if (is_empty(s)) {
-		fprintf(stderr, "ìŠ¤íƒ ê³µë°± ì—ëŸ¬\n");
+		fprintf(stderr, "½ºÅÃ °ø¹é ¿¡·¯\n");
 		exit(1);
 	}
 	else return s->data[s->top];
@@ -62,7 +62,7 @@ char maze[MAZE_SIZE][MAZE_SIZE] = {
 	{ '1', '0', '1', '0', '0', 'x' },
 	{ '1', '1', '1', '1', '1', '1' },
 };
-// ìœ„ì¹˜ë¥¼ ìŠ¤íƒì— ì‚½ì…
+// À§Ä¡¸¦ ½ºÅÃ¿¡ »ğÀÔ
 void push_loc(StackType* s, int r, int c) {
 	if (r < 0 || c < 0) return;
 	if (maze[r][c] != '1' && maze[r][c] != '.') {
@@ -73,7 +73,7 @@ void push_loc(StackType* s, int r, int c) {
 	}
 }
 
-// ë¯¸ë¡œë¥¼ í™”ë©´ì— ì¶œë ¥í•œë‹¤. 
+// ¹Ì·Î¸¦ È­¸é¿¡ Ãâ·ÂÇÑ´Ù. 
 void maze_print(char maze[MAZE_SIZE][MAZE_SIZE]) {
 	printf("\n");
 	for (int r = 0; r < MAZE_SIZE; r++) {
@@ -87,7 +87,7 @@ void maze_print(char maze[MAZE_SIZE][MAZE_SIZE]) {
 void printStack(StackType* s) {
 	int i = s->top;
 	for (; 0 <= i; i--) {
-		printf("ìŠ¤íƒë†’ì´ %d / %d í–‰ %d ì—´\n", i, s->data[i].r, s->data[i].c);
+		printf("½ºÅÃ³ôÀÌ %d / %d Çà %d ¿­\n", i, s->data[i].r, s->data[i].c);
 	}
 }
 
@@ -109,12 +109,12 @@ int main(void) {
 		push_loc(&s, r, c + 1);
 		printStack(&s);
 		if (is_empty(&s)) {
-			printf("ì‹¤íŒ¨\n");
+			printf("½ÇÆĞ\n");
 			return;
 		}
 		else
 			here = pop(&s);
 	}
-	printf("ì„±ê³µ\n");
+	printf("¼º°ø\n");
 	return 0;
 }

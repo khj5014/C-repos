@@ -1,35 +1,62 @@
 #include <stdio.h>
-#define n 10
+#include <stdlib.h>
 
-void insert(int array[n], int loc, int value) {
-	
-	int i = n - 1;
-	int template;
-	
-	for (; loc - 1 < i; i--)
-	{
-		template = array[i];
-		array[i] = array[i - 1];
-		array[i - 1] = template;
-	}
-	array[loc - 1] = value;
+typedef int element;
+
+typedef struct ListNode {
+	element data;
+	struct ListNode* link;
+} ListNode;
+
+void error(char* message)
+{
+	fprintf(stderr, "%s\n", message);
+	exit(1);
 }
 
-int main() {
-	int array[n] = {1,2,3,4,5};
-	int loc;
-	int value;
+ListNode* create_node(int x) {
+	ListNode* p = malloc(sizeof(ListNode));
+	p->data = x;
+	p->link = NULL;
 
-	printf("몇 번째?");
-	scanf_s("%d", &loc);
-	printf("어떤 값?");
-	scanf_s("%d", &value);
+	return p;
+}
 
-	insert(array, loc, value);
-
-	for (int i = 0; i < n; i++)
-	{
-		printf("%d\n", array[i]);
-
+void insert_node(ListNode** phead, ListNode* p, ListNode* new_node)
+{
+	if (*phead == NULL) {
+		new_node->link = NULL;
+		*phead = new_node;
 	}
+	else if (p == NULL) {
+		new_node->link = *phead;
+		*phead = new_node;
+	}
+	else {
+		new_node->link = p->link;
+		p->link = new_node;
+	}
+}
+
+int main(void)
+{
+	ListNode* list = NULL;
+	int i; //노드의 개수를 받기 위한 변수
+	int count = 0;
+
+	printf("\n");
+	printf("노드의 개수 : ");
+	scanf_s("%d", &i);
+
+	for (int k = 0; i > k; k++) { //노드의 개수 i번 만큼 반복
+		element tmpdata; //노드의 데이터를 받기 위한 변수
+
+		printf("노드의 #%d의 데이터 : ", k + 1);
+		scanf_s("%d", &tmpdata);
+
+		insert_node(&list, NULL, create_node(tmpdata));
+		count++;
+	}
+	printf("연결 리스트 노드의 개수 : %d", count);
+
 }

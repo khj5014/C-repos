@@ -1,5 +1,6 @@
 #include "header.h"
 
+//메인함수
 int main(void)
 {
 	FILE* fp;
@@ -24,51 +25,14 @@ int main(void)
 		}
 			switch (select) {
 			case 1:	add_record(fp); break;		// 데이터를 추가한다
-			case 2:	all_print(fp); break;			// 잔액계산기
+			case 2:	all_print(fp); break;		// 전체리스트
 			case 3:	search_record(fp); break;	// 데이터를 탐색한다
-			case 4:	return 0;
+			case 4:	return 0;					//종료
 			}
 	}
 	
-	fclose(fp);	// 이진 파일을 닫는다
+	fclose(fp);	// 파일을 닫는다
 	return 0;
-}
-
-// 구조체함수
-wallet get_record()
-{
-	wallet data;
-	getchar();
-	printf("\n  날짜: "); 	gets_s(data.date, SIZE);	// 날짜을 입력받는다
-	printf("  수입: ");	gets_s(data.income, SIZE);		// 수입를 입력받는다
-	printf("  지출: ");	gets_s(data.expense, SIZE);		// 지출를 입력받는다
-	printf("  내용: ");	gets_s(data.Contents, SIZE);	// 내용을 입력받는다
-	return data;
-}
-
-// 데이터를 추가한다
-void add_record(FILE* fp)
-{
-	wallet data;
-	data = get_record();	// 사용자로부터 데이터를 받아서 구조체에 저장
-	fseek(fp, 0, SEEK_END);	// 파일의 끝으로 간다	
-	fwrite(&data, sizeof(data), 1, fp);	// 구조체 데이터를 파일에 쓴다
-}
-
-
-// 구조체 데이터를 화면에 출력한다. 
-void print_record(wallet data)
-{
-	FILE* fp = NULL;
-	
-	printf("\n  ----------검색 내용---------- \n");
-	printf("  날짜: %s\n", data.date);
-	printf("  수입: %s\n", data.income);
-	printf("  지출: %s\n", data.expense);
-	printf("  내용: %s\n", data.Contents);
-	printf("  잔액: %s원\n", data.money);
-	printf("  ----------------------------- ");
-	printf("\n\n ");
 }
 
 // 메뉴를 화면에 표시하는 함수
@@ -83,22 +47,31 @@ void menu()
 	printf("  ■■■■■■■■■■■■■\n");
 }
 
-// 데이터를 탐색한다
-
-void search_record(FILE* fp)
+// 데이터 추가용 구조체함수
+wallet get_record()
 {
-	char date[SIZE];
 	wallet data;
-	fseek(fp, 0, SEEK_SET);	// 파일의 처음으로 간다
 	getchar();
-	//스위치문 추가예정
-	printf("\n  탐색하고자 하는 날짜 : ");
-	gets_s(date, SIZE);		// 이름을 입력받는다
-	while (!feof(fp)) {		// 파일의 끝까지 반복한다
-		fread(&data, sizeof(data), 1, fp);
-		if (strcmp(data.date, date) == 0) {	// 이름을 비교한다
-			print_record(data);
-			break;
-		}
-	}
+	printf("\n  날짜: "); gets_s(data.date, SIZE);		// 날짜을 입력받는다
+	printf("  수입: ");	gets_s(data.income, SIZE);		// 수입를 입력받는다
+	int car = 0;
+	car = (data.income) - (data.expense);				//잔액계산
+	gets_s(data.carmoney = car,SIZE);
+	printf("  지출: ");	gets_s(data.expense, SIZE);		// 지출를 입력받는다
+	printf("  내용: ");	gets_s(data.Contents, SIZE);	// 내용을 입력받는다
+	return data;
+}
+
+// 구조체 데이터를 화면에 출력한다. 
+void print_record(wallet data)
+{
+
+	printf("\n  ----------검색 내용---------- \n");
+	printf("  날짜: %s\n", data.date);
+	printf("  수입: %s\n", data.income);
+	printf("  지출: %s\n", data.expense);
+	printf("  잔액: %s\n", data.carmoney);
+	printf("  내용: %s\n", data.Contents);
+	printf("  ----------------------------- ");
+	printf("\n\n ");
 }

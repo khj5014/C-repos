@@ -62,6 +62,4 @@ int main() {
 	insert_node(&list, NULL, tmpNode);
 
 	display(list);
-
-	printf("%d", list->link->link->data);
 }

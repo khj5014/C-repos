@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <windows.h>
 #define SIZE 100
 
 typedef struct person {			// 연락처를 구조체로 표현한다. 
@@ -14,7 +15,6 @@ PERSON get_record();
 void print_record(PERSON data);
 void add_record(FILE* fp);
 void search_record(FILE* fp);
-void update_record(FILE* fp);
 
 int main(void)
 {
@@ -31,9 +31,8 @@ int main(void)
 		scanf("%d", &select);
 		switch (select) {
 		case 1:	add_record(fp); break;		// 데이터를 추가한다
-		case 2:	update_record(fp); break;	// 데이터를 수정한다
-		case 3:	search_record(fp); break;	// 데이터를 탐색한다
-		case 4:	return 0;
+		case 2:	search_record(fp); break;	// 데이터를 탐색한다
+		case 3:	return 0;
 		}
 	}
 	fclose(fp);	// 이진 파일을 닫는다
@@ -63,7 +62,7 @@ void print_record(PERSON data)
 void menu()
 {
 	printf("====================\n");
-	printf(" 1. 추가\n 2. 수정\n 3. 검색\n 4. 종료\n");
+	printf(" 1. 추가\n 2. 검색\n 3. 종료\n");
 	printf("====================\n");
 }
 
@@ -82,7 +81,7 @@ void search_record(FILE *fp)
 	PERSON data;
 	fseek(fp, 0, SEEK_SET);	// 파일의 처음으로 간다
 	getchar();
-	printf("탐색하고자 하는 사람의 이름\n`");
+	printf("탐색하고자 하는 사람의 이름\n");
 	gets_s(name, SIZE);		// 이름을 입력받는다
 	while (!feof(fp)) {		// 파일의 끝까지 반복한다
 		fread(&data, sizeof(data), 1, fp); 		
@@ -91,7 +90,4 @@ void search_record(FILE *fp)
 			break;
 		}
 	}
-}
-void update_record(FILE *fp) {
-
 }

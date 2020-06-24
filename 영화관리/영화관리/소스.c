@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <windows.h>
 
 typedef struct movie {	// 구조체 타입 정의
@@ -11,6 +12,8 @@ int main(void)
 	int size, i;
 	printf("몇 편이나 저장하시겠습니까? ");
 	scanf_s("%d", &size);
+	getchar();
+
 	movies = (MOVIE*)malloc(sizeof(MOVIE) * size);	// 동적 메모리 할당
 	if (movies == NULL) {
 		printf("동적 메모리 할당 오류");
@@ -18,10 +21,10 @@ int main(void)
 	}
 	for (i = 0; i < size; i++) {		// size편의 영화 정보 입력
 		printf("영화 제목");
-		fflush(stdin);		// 입력 버퍼를 비운다. 
-		gets(movies[i].title);	// 영화 제목에는 빈칸이 있을 수 있다. 
+		gets_s(movies[i].title, 100);	// 영화 제목에는 빈칸이 있을 수 있다. 
 		printf("영화 평점");
 		scanf_s("%lf", &(movies[i].rating));
+		getchar();
 	}
 	printf("========================\n");
 	printf("제목 \t 평점 \n");
@@ -30,6 +33,8 @@ int main(void)
 	
 		printf("%s \t %f \n", movies[i].title, movies[i].rating);
 	printf("\n========================\n");
+	
+	printf("\n\n\n\n학번 : 20174257 김희재\n\n\n");
 	free(movies);			// 동적 메모리 공간 해제
 	return 0;
 }

@@ -15,35 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="메인함수.c">
+    <ClCompile Include="wc.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="기능소스.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="날짜소스.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="출력소스.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="header.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="컴프2 중간 고사  개인 프로젝트.rc">
-      <Filter>리소스 파일</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\..\Desktop\중간\202.ico">
-      <Filter>리소스 파일</Filter>
-    </Image>
   </ItemGroup>
 </Project>

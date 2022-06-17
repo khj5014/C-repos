@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: 중간 디렉터리(Debug\)에 다른 프로젝트(swap2.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  swap2.c
+C:\Users\gmlwo\source\repos\컴프2실습1\pointer-4\swap2.c(21,6): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
+C:\Users\gmlwo\source\repos\컴프2실습1\pointer-4\swap2.c(32,6): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
+  pointer-4.vcxproj -> C:\Users\gmlwo\source\repos\컴프2실습1\Debug\pointer-4.exe

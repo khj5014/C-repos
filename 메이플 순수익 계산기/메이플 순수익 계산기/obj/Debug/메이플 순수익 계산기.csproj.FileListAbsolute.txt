@@ -1,0 +1,20 @@
+C:\Users\gmlwo\source\repos\메이플 순수익 계산기\메이플 순수익 계산기\bin\Debug\메이플 순수익 계산기.exe.config
+C:\Users\gmlwo\source\repos\메이플 순수익 계산기\메이플 순수익 계산기\bin\Debug\메이플 순수익 계산기.exe
+C:\Users\gmlwo\source\repos\메이플 순수익 계산기\메이플 순수익 계산기\bin\Debug\메이플 순수익 계산기.pdb
+C:\Users\gmlwo\source\repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플_순수익_계산기.Form1.resources
+C:\Users\gmlwo\source\repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플_순수익_계산기.Properties.Resources.resources
+C:\Users\gmlwo\source\repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플 순수익 계산기.csproj.GenerateResource.cache
+C:\Users\gmlwo\source\repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플 순수익 계산기.csproj.CoreCompileInputs.cache
+C:\Users\gmlwo\source\repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플 순수익 계산기.exe
+C:\Users\gmlwo\source\repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플 순수익 계산기.pdb
+C:\Users\gmlwo\source\repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플 순수익 계산기.csprojAssemblyReference.cache
+D:\CODDING\비쥬얼 repos\메이플 순수익 계산기\메이플 순수익 계산기\bin\Debug\메이플 순수익 계산기.exe.config
+D:\CODDING\비쥬얼 repos\메이플 순수익 계산기\메이플 순수익 계산기\bin\Debug\메이플 순수익 계산기.exe
+D:\CODDING\비쥬얼 repos\메이플 순수익 계산기\메이플 순수익 계산기\bin\Debug\메이플 순수익 계산기.pdb
+D:\CODDING\비쥬얼 repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플 순수익 계산기.csprojAssemblyReference.cache
+D:\CODDING\비쥬얼 repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플_순수익_계산기.Form1.resources
+D:\CODDING\비쥬얼 repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플_순수익_계산기.Properties.Resources.resources
+D:\CODDING\비쥬얼 repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플 순수익 계산기.csproj.GenerateResource.cache
+D:\CODDING\비쥬얼 repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플 순수익 계산기.csproj.CoreCompileInputs.cache
+D:\CODDING\비쥬얼 repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플 순수익 계산기.exe
+D:\CODDING\비쥬얼 repos\메이플 순수익 계산기\메이플 순수익 계산기\obj\Debug\메이플 순수익 계산기.pdb

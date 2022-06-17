@@ -1,0 +1,11 @@
+﻿  소스.c
+C:\Users\gmlwo\source\repos\이진트리 실습\이진트리 실습\소스.c(19,29): warning C4133: '초기화 중': 'TreeNode *'과(와) 'TreeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\gmlwo\source\repos\이진트리 실습\이진트리 실습\소스.c(22,30): warning C4133: '초기화 중': 'TreeNode *'과(와) 'TreeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\gmlwo\source\repos\이진트리 실습\이진트리 실습\소스.c(23,30): warning C4133: '초기화 중': 'TreeNode *'과(와) 'TreeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\gmlwo\source\repos\이진트리 실습\이진트리 실습\소스.c(30,21): warning C4133: '함수': 'TreeNode *'과(와) 'TreeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\gmlwo\source\repos\이진트리 실습\이진트리 실습\소스.c(32,22): warning C4133: '함수': 'TreeNode *'과(와) 'TreeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\gmlwo\source\repos\이진트리 실습\이진트리 실습\소스.c(39,22): warning C4133: '함수': 'TreeNode *'과(와) 'TreeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\gmlwo\source\repos\이진트리 실습\이진트리 실습\소스.c(40,23): warning C4133: '함수': 'TreeNode *'과(와) 'TreeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\gmlwo\source\repos\이진트리 실습\이진트리 실습\소스.c(46,23): warning C4133: '함수': 'TreeNode *'과(와) 'TreeNode *' 사이의 형식이 호환되지 않습니다.
+C:\Users\gmlwo\source\repos\이진트리 실습\이진트리 실습\소스.c(47,24): warning C4133: '함수': 'TreeNode *'과(와) 'TreeNode *' 사이의 형식이 호환되지 않습니다.
+  이진트리 실습.vcxproj -> C:\Users\gmlwo\source\repos\이진트리 실습\Debug\이진트리 실습.exe

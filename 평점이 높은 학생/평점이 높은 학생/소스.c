@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <Windows.h>
+
 struct student {
 	int number;
 	char name[20];

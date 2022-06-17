@@ -1,0 +1,4 @@
+﻿  swap2.c
+C:\Users\gmlwo\source\repos\컴프2실습1\swap1\swap2.c(21,6): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
+C:\Users\gmlwo\source\repos\컴프2실습1\swap1\swap2.c(32,6): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
+  swap1.vcxproj -> C:\Users\gmlwo\source\repos\컴프2실습1\Debug\swap2.exe

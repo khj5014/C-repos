@@ -138,16 +138,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="메인함수.c" />
+    <ClCompile Include="정수받기.c" />
     <ClCompile Include="큡소스.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="헤더.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="장인의 큐브.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="장큐.ico" />
+    <Image Include="D:\아이콘 파일\장큐.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

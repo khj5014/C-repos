@@ -1,0 +1,14 @@
+﻿  소스.c
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(84,19): warning C4047: '함수': 'ListNode **'의 간접 참조 수준이 'CListType *'과(와) 다릅니다.
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(84,19): warning C4024: 'insert_node': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(86,19): warning C4047: '함수': 'ListNode **'의 간접 참조 수준이 'CListType *'과(와) 다릅니다.
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(86,19): warning C4024: 'insert_node': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(88,19): warning C4047: '함수': 'ListNode **'의 간접 참조 수준이 'CListType *'과(와) 다릅니다.
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(88,19): warning C4024: 'insert_node': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(90,19): warning C4047: '함수': 'ListNode **'의 간접 참조 수준이 'CListType *'과(와) 다릅니다.
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(90,19): warning C4024: 'insert_node': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(92,19): warning C4047: '함수': 'ListNode **'의 간접 참조 수준이 'CListType *'과(와) 다릅니다.
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(92,19): warning C4024: 'insert_node': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(94,15): warning C4047: '함수': 'ListNode **'의 간접 참조 수준이 'CListType *'과(와) 다릅니다.
+C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\자료구조 중간고사\소스.c(94,15): warning C4024: 'display': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+  자료구조 중간고사.vcxproj -> C:\Users\gmlwo\source\repos\자료구조 중간고사(2-1학기)\Debug\자료구조 중간고사.exe

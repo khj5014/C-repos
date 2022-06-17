@@ -1,0 +1,3 @@
+﻿  소스.c
+C:\Users\gmlwo\source\repos\과제프로젝\Project2\소스.c(11,7): warning C4101: 'buffer' :참조되지 않은 지역 변수입니다.
+  Project2.vcxproj -> C:\Users\gmlwo\source\repos\과제프로젝\Debug\Project2.exe
